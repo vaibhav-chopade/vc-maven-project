@@ -20,11 +20,6 @@ steps:
     mavenAuthenticateFeed: false
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
-- task: CopyFiles@2
-  inputs:
-    SourceFolder: '/home/vsts/work/1/s/webapp/target/'
-    Contents: '*.war'
-    TargetFolder: '/usr/local/tomcat/webapps/'
 - task: Docker@2
   inputs:
     containerRegistry: 'ACR-to DevOps'
