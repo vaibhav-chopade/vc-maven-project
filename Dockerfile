@@ -1,3 +1,3 @@
 FROM tomcat
-MAINTAINER Vaibhav
+MAINTAINER VC
 COPY webapp/target/*.war /usr/local/tomcat/webapps/
